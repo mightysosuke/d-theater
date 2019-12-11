@@ -1,2 +1,21 @@
-<h1>Choices#new</h1>
-<p>Find me in app/views/choices/new.html.erb</p>
+<div class="top-choice-wrapper text-center">
+  <div class="container top-choice-container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <ul>
+          <% @choices.each do |choice| %>
+            <li>
+              <%= choice.name %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-md-offset-2 col-md-4">
+        <%= link_to 'もう一度表示', choices_new_path, class: 'btn btn-block btn-blue' %>
+      </div>
+      <div class="col-md-4">
+        <%= link_to 'ディズニーデラックスはこちら', 'https://theater.disney.co.jp/#!/', class: 'btn btn-block btn-blue' %>
+      </div>
+    </div>
+  </div>
+</div>

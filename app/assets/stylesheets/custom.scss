@@ -61,3 +61,42 @@ h1, h2 {
     margin-bottom: 60px;
   }
 }
+
+.top-choice-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.top-choice-container {
+  padding-top: 50px;
+  h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+ul {
+  padding: 0;
+}
+
+ul li, ol li {
+  color: #404040;
+  border-left: solid 6px #67c5ff;/*左側の線*/
+  border-bottom: solid 2px #dadada;/*下に灰色線*/
+  background: whitesmoke;
+  margin-bottom: 5px;/*下のバーとの余白*/
+  line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;/*ポチ消す*/
+  font-size: 22px;
+  font-weight: bold;
+}
