@@ -59,4 +59,4 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database:[あなたのアプリのデータベース名]
+  database: d-theater_production
