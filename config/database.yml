@@ -47,8 +47,16 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
+# production:
+#   <<: *default
+#   database: d-theater_production
+#   username: d-theater
+#   password: <%= ENV['D-THEATER_DATABASE_PASSWORD'] %>
+
 production:
   <<: *default
-  database: d-theater_production
-  username: d-theater
-  password: <%= ENV['D-THEATER_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  database:[あなたのアプリのデータベース名]
