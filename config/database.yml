@@ -54,9 +54,9 @@ test:
 #   username: d-theater
 #   password: <%= ENV['D-THEATER_DATABASE_PASSWORD'] %>
 
-production:
-  <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
-  database: d-theater_production
+# production:
+#   <<: *default
+#   adapter: postgresql
+#   # encoding: unicode
+#   pool: 5
+#   database: d-theater_production
