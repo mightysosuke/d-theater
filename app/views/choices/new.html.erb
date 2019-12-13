@@ -1,0 +1,19 @@
+<div class="top-choice-wrapper text-center">
+  <div class="container top-choice-container">
+    <div class="row">
+      <div class="col-md-offset-2 col-md-8">
+        <ul>
+          <% @choices.each do |choice| %>
+            <li>
+              <%= choice.name %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+      <div class="col-md-offset-2 col-md-8">
+        <%= link_to 'もう一度表示', choices_new_path, class: 'btn btn-block btn-blue' %>
+      </div>
+    </div>
+    <%= link_to 'ディズニーデラックスはこちら(外部リンク)', 'https://theater.disney.co.jp/#!/', target: :_blank %>
+  </div>
+</div>
